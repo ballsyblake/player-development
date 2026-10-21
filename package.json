@@ -1,0 +1,13 @@
+{
+  "name": "player-development",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Academy player database: offers, retention, fees, kit and contacts in one place.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "xlsx": "0.18.5"
+  }
+}
