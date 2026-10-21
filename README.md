@@ -48,6 +48,14 @@ npm start            # serves on http://localhost:8080 (python3 http.server)
 
 Opening `index.html` directly also works. To try it with fictional players, use **Load demo data**.
 
+### GitHub Pages
+
+`.github/workflows/pages.yml` runs the tests and publishes `index.html`, `css/` and `js/` on every push.
+One-time setup: **Settings -> Pages -> Build and deployment -> Source: GitHub Actions**, then re-run the workflow.
+The site will be at `https://ballsyblake.github.io/player-development/`.
+
+The page is public, but it only contains the app code. Each visitor starts with an empty database that exists in their own browser. Player data is never uploaded to GitHub, and visitors cannot see each other's data.
+
 ## Tests
 
 ```bash
